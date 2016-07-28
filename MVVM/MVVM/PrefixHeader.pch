@@ -1,0 +1,25 @@
+//
+//  PrefixHeader.pch
+//  MVVM
+//
+//  Created by TomatoPeter on 16/7/22.
+//  Copyright © 2016年 ChenJianglin. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "AFNetworking.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
+//请求公共微博的网络接口
+#define REQUESTPUBLICURL @"https://api.weibo.com/2/statuses/public_timeline.json"
+#define USER_DEFAULT (NSUserDefaults *)[NSUserDefaults standardUserDefaults]
+
+//是否缓存response
+#define URLCACHE_CACHE_KEY @"MobileAppCacheKey"
+
+//缓存的超时Key
+#define URLCACHE_EXPIRATION_AGE_KEY @"MobileAppExpirationAgeKey"
+
+
+#endif
